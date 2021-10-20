@@ -15,4 +15,5 @@ describe('Creating a custom command', () => {
         cy.deleteBoard('Beers of the world');
         cy.contains('Beers of the world').should('not.exist');
     });
+    
 });
