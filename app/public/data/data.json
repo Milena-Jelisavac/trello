@@ -1,6 +1,84 @@
 {
-  "boards": [],
-  "tasks": [],
+  "boards": [
+    {
+      "name": "To do",
+      "user": 0,
+      "id": 55456649363,
+      "starred": false,
+      "created": "2021-10-16"
+    },
+    {
+      "name": " In progress",
+      "user": 0,
+      "id": 22815721245,
+      "starred": true,
+      "created": "2021-10-16"
+    },
+    {
+      "name": "In QA",
+      "user": 0,
+      "id": 63391079216,
+      "starred": false,
+      "created": "2021-10-20"
+    },
+    {
+      "name": "Done",
+      "user": 0,
+      "id": 44436449514,
+      "starred": false,
+      "created": "2021-10-20"
+    },
+    {
+      "name": "rrr",
+      "user": 0,
+      "id": 33812259875,
+      "starred": false,
+      "created": "2021-10-20"
+    }
+  ],
+  "tasks": [
+    {
+      "boardId": 63391079216,
+      "description": "",
+      "completed": false,
+      "listId": 86193003910,
+      "title": "Stubbing network responses",
+      "id": 11373796480,
+      "created": "2021-10-20",
+      "deadline": "2021-10-23",
+      "order": 0
+    },
+    {
+      "boardId": 63391079216,
+      "description": "",
+      "completed": false,
+      "listId": 86193003910,
+      "title": "Changing parts of response data",
+      "id": 34522162011,
+      "created": "2021-10-20",
+      "deadline": "2021-10-23",
+      "order": 1
+    },
+    {
+      "boardId": 63391079216,
+      "description": "",
+      "completed": false,
+      "listId": 86193003910,
+      "title": "Intercepting",
+      "id": 41244416167,
+      "created": "2021-10-20",
+      "deadline": "2021-10-23",
+      "order": 2
+    }
+  ],
   "users": [],
-  "lists": []
+  "lists": [
+    {
+      "boardId": 63391079216,
+      "title": "List",
+      "id": 86193003910,
+      "created": "2021-10-20",
+      "order": 0
+    }
+  ]
 }
