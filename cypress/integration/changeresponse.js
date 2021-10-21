@@ -1,6 +1,7 @@
+
 describe("Network stabbing", () => {
   it("Changing network response", () => {
-    cy.intercept("/api/boards", { fixture: "board.json" }).as("fa");
+    cy.intercept("/api/boards", { fixture: "board.json" }).as("stubbedBoards");
     cy.visit("/");
   });
 
@@ -21,9 +22,9 @@ describe("Network stabbing", () => {
     cy.visit("/");
   });
   it("Asertovanje", () => {
-    cy.intercept("/api/boards", { fixture: "board.json" }).as("fa");
+    cy.intercept("/api/boards", { fixture: "board.json" }).as("stubbedBoards");
     cy.visit("/");
-    cy.get("@fa")
+    cy.get("@stubbedBoards")
       .its("response")
       .then((res) => {
         expect(res.body[0].name).to.eq("Novi drugi board");
@@ -40,9 +41,4 @@ describe("Network stabbing", () => {
 
     cy.visit("");
   });
-  it('Delete board', () => {
-    cy.request('DELETE', '/api/boards/*', {
-        statusCode: 200
-      })
-});
 });
